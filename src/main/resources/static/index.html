@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineStream | Premium Movie Reviews</title>
+    <title>CineMax</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
 
     <!-- Navigation Bar -->
     <nav class="glass-nav">
         <div class="nav-container">
-            <h1 class="logo" id="nav-logo">CineStream</h1>
+            <h1 class="logo" id="nav-logo">CineMax</h1>
             <div class="nav-links">
                 <button class="nav-btn active" id="nav-home">Home</button>
                 <button class="nav-btn" id="nav-watchlist" style="display: none;">My Watchlist</button>
@@ -25,7 +27,7 @@
 
     <!-- Main Content Area -->
     <main id="app-content">
-        
+
         <!-- 1. Home View -->
         <section id="view-home" class="view active">
             <div class="hero">
@@ -88,10 +90,10 @@
             <div class="movie-detail-content glass-panel" id="movie-detail-container">
                 <!-- Movie details injected here -->
             </div>
-            
+
             <div class="reviews-section">
                 <h3>Reviews</h3>
-                
+
                 <!-- Add Review Form (Only visible if logged in) -->
                 <div id="add-review-container" class="glass-panel" style="display: none;">
                     <h4>Leave a Review</h4>
@@ -147,10 +149,23 @@
 
     </main>
 
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 CineMax. Created by <span class="highlight">Rishi</span>.</p>
+            <div class="footer-links">
+                <a href="https://github.com/rishilrsk" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/rishisivakesh/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
     <!-- Notification Toast -->
     <div id="toast" class="toast">Action Successful!</div>
 
     <script src="/js/api.js"></script>
     <script src="/js/app.js"></script>
 </body>
+
 </html>
