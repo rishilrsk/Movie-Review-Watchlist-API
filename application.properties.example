@@ -1,0 +1,21 @@
+# Example Application configuration
+# Copy this file to src/main/resources/application.properties or provide these as environment variables
+spring.application.name=movie-review-api
+server.port=8080
+
+# Database Connection (MySQL)
+spring.datasource.url=jdbc:mysql://localhost:3306/movie_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+spring.datasource.username=root
+# Replace with your actual database password
+spring.datasource.password=your_database_password_here
+
+# Hibernate Configuration
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
+
+# JWT Security Configuration
+# Replace with a secure, 256-bit (32 character) secret key
+jwt.secret=your_secure_jwt_secret_key_here_must_be_long
+jwt.expirationMs=86400000 
